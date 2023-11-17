@@ -1,0 +1,45 @@
+.contenedorcaja{
+  background-color: #f59be0;
+  width: 100vw;
+  height: 100vh;
+  
+}
+.contenedor{
+  width: 50vw;
+  height: 50vh;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(245, 180, 180, 0.75), rgba(238, 74, 167, 0.75)), url(/img/arreglos.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.contenedor p{
+  padding: 20px;
+ color: aliceblue;
+ font-size: 20px;
+ text-align: center;
+ align-items: center;
+}
+p,strong{
+  background: none;
+}
+video{
+
+ height: 70vh;
+ width: 50%;
+}
+iframe{
+ 
+  height: 70vh;
+  width: 70%;
+}
+.contenido{
+  background-color: #f59be0;
+}
+.titulo{
+  margin: 40px;
+}

@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: #bc4e9c;
+    background-size: cover;
+    animation: banner 28s infinite linear;
+    background-attachment: fixed;
+    position: relative;
+}
+body {
+    background-color: #f59be0;
+}
+.menu {
+    width: 100%;
+    background: #171717;
+    /*position: fixed;*/
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+.menu img{
+    height: 100px;
+    width: 200px;
+}
+.navbar{
+    float: right;
+}
+.menu .navbar a {
+    align-items: center;
+   text-decoration: none;
+    margin: 0 1rem;
+    font-size: 20px;
+    color: #fff;
+    transition: .2s;
+}
+.navbar a:hover {
+    color: #f9580e;
+}
+header .logo {
+    font-size: 2.5rem;
+}
+header .fa-bars {
+    font-size: 3rem;
+    color: #8bf90e;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+.submenu {
+    position: relative;
+}
+.submenu img{
+    border-radius: 10%;
+}
+
+.submenu #carrito{
+    display: none;
+    border:black 2px solid;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(235, 31, 31);
+    padding: 20px;
+
+}
+.button{
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  border-radius: 4px;
+  color:black;
+  border: 1px solid #bbb;
+   }
+
+@media (max-width: 768px) {
+  
+    header .fa-bars {
+        display: block;
+    }
+  
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: #171717;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: .2s linear;
+    }
+  
+    header .navbar a {
+        flex-flow: column;
+        padding: 2rem 0;
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+        display: block;
+    }
+    header .nav-toggle {
+        top:5.5rem;
+        opacity: 1;
+    }
+  }
+  @keyframes banner{
+	0%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),url('../img/cajalazorosada.png');
+	}
+	25%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url('../img/cajalazorosada.png');
+	}
+
+
+	26%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),  url('../img/arreglos.png');
+	}
+	50%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url('../img/arreglos.png');
+	}
+
+
+	51%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),   url('../img/cajapeluche1.png');
+	}
+	75%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),  url('../img/cajapeluche1.png');
+	}
+	
+
+	76%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),  url('../img/blanca1.png');
+	}
+	100%{
+		background-image:linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)),  url('../img/blanca1.png');
+	}
+
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+   
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*css boleta*/
+.contn-carrito{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.contenedor-responsive{
+    max-width: 1250px;
+    margin: auto;
+}
+.container-carrito{
+    background-color: rgb(234, 16, 230);
+  }
+  .carritocontenedorT{
+  background-color: rgb(244, 239, 239);
+  border: #171717 2px solid;
+   width: 500px;
+   margin: auto;
+   padding: 25px;
+   
+  }
+  
+  .titulo{
+    text-align: center;
+  }
+.img-responsive{
+    width: 100px;
+    height: 80px;
+}
+.piepagina{
+    text-align: center;
+}
+.botones{
+ text-align: center;
+ 
+}
+.botones a {
+    text-decoration: none;
+    border: 2px black solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #8bf90e;
+    margin-top: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.table-cotenido{
+    background-color: #8bf90e;
+    border: #171717 2px solid;
+    padding: auto;
+}

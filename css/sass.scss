@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
+
+.contenedor-responsive {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+//header
+.head-contn {
+    max-width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 0 20px;
+        align-items: center;
+    }
+}
+
+.contenedor-carrito {
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    .contenedor-item-carrito {
+        cursor: pointer;
+        //width: 300px;
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        &:hover {
+            -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        @media only screen and (min-width:700px) {
+            width: 320px;
+        }
+
+        .cntn-imagen {
+            img {
+                @media only screen and (min-width:700px) {
+                    width: 100%;
+                }
+
+                width: 100%;
+                height: 280px;
+                margin: auto;
+            }
+        }
+
+        padding: 20px;
+
+        button {
+            background-color: #7971EA;
+        }
+    }
+}
+
+//carrito de compras
+.contenedor-responsive .contenedor-shop-carrito-shop {
+    max-width: 100%;
+    overflow-x: scroll;
+
+    @media only screen and (min-width:700px) {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 700px;
+        text-align: center;
+
+        thead tr td {
+            padding: 15px 0;
+        }
+
+        tbody tr td {
+            padding: 15px 0;
+
+            img {
+                width: 100px;
+            }
+        }
+
+    }
+}
+
+.contn-link-compras {
+    gap: 0 40px;
+    margin: 15px 0;
+}
+
+.body-recibir-pago {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    >div {
+        position: relative;
+
+        .button-close {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 30px;
+            text-decoration: none;
+            a{
+                color: #7971EA;
+            }
+            
+        }
+
+        background-color: white;
+        width: 340px;
+        padding: 20PX 30px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        .img-contn-recibo{
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+            border: 2px solid #7971EA;
+            text-align: center;
+            font-size: 100px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+}
+    }
+}
+.contn-total-pago{
+   padding-top: 50px;
+   @media only screen and (min-width:600px){
+    padding-top: 0;
+   }
+}

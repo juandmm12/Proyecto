@@ -1,0 +1,51 @@
+.pie{
+    background-color: black;
+    padding:15px 0 20px;
+    color:aqua;
+  }
+  .text{
+    font-size: 30px;
+    font-family: arial;
+    color: aqua;
+    background-color: black;
+    margin-left: 100px;
+  }
+  .text1{
+    text-align: right;
+    background-color: black;
+    margin-right: 100px;
+    font-size: 30px;
+  }
+  .icons{
+    text-align:right;
+    background-color: black;
+    margin-right: 70px;
+  }
+  .icons a{
+    background-color:#292626;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    text-align: center;
+    border-radius: 100%;
+    line-height:60px;
+  }
+  .icons li{
+    display: inline-block;
+    border-radius: 100%;
+  }
+  .icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  .icons a.instagram:hover
+  {
+    background-color:#ed0092;
+  }
+  i{
+   background:none;
+   font-size: 30px;
+   color: white;
+  
+  }
+ 

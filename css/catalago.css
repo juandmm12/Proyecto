@@ -1,0 +1,45 @@
+
+section{
+    width: 90%;
+}
+#deslizar img{
+    width: 100%;
+	height: 100%;
+}
+
+#deslizar .box {
+
+    border: 5px solid black;
+    border-radius: 40px;
+	margin: 55px;
+    float: left;
+	width: 400px;
+    position:relative;
+    overflow:hidden;
+	height: 400px;
+}
+ 
+#deslizar .box .caption {
+    background-color: #40f015cc;
+    position: absolute;
+    transition:1ms;
+  
+}
+#deslizar .box .simple-caption {
+    height: 40px;
+    width: 100%;
+    display: block;
+    bottom: -30px;
+    text-align:center;
+}
+#deslizar .box:hover .simple-caption {
+    transform: translateY(-100%);
+    
+}
+h2{ 
+     background: none;
+     color:#20201e;
+}
+a{
+    text-decoration: none;
+}
